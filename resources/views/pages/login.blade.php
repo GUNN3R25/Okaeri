@@ -40,6 +40,7 @@ a{
     <body>
      
 <div class="simple-login-container">
+<<<<<<< HEAD
     <form method="POST" action="{{ Route('Login') }}">
     @csrf
           <h2>Login Form</h2>
@@ -63,6 +64,27 @@ a{
     </div>  
     </form>
 
+=======
+    <h2>Login Form</h2>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="password" placeholder="Enter your Password" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="submit" class="btn btn-block btn-login" placeholder="Enter your Password" >
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+>>>>>>> a55ca1ea3284fd74c9a72dba4e83008ec3856668
 </div>
     </body>
 </html>

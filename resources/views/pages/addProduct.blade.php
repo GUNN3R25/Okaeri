@@ -6,8 +6,11 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<<<<<<< HEAD
 <script src="/js/dropzone.js"></script>
 <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+=======
+>>>>>>> a55ca1ea3284fd74c9a72dba4e83008ec3856668
 
 @include('includes.stye')
 
@@ -30,6 +33,7 @@
   
   <div class="row">
     <div class="col-md-6">
+<<<<<<< HEAD
     <h1>Agregar Producto</h1>
     </div>
   </div>
@@ -148,6 +152,69 @@
   
 
         
+=======
+    <h1>Add Product</h1>
+    </div>
+  </div>
+  
+    
+  
+<div class="row">
+  
+  <div class="col-md-6">
+  <form role="form">
+    
+    <select class="form-control" id="productSelect"><option>Please Select a Product Group</option>
+      <option>Bar Soaps</option>
+      <option>Lotions</option>
+      <option>Creams</option>
+    </select>
+    
+ <div class="form-group">
+   <label for="productname" class="loginFormElement">Producto:</label>
+   <input class="form-control" id="productname" type="email">
+ </div>
+    
+ <div class="form-group">
+   <label for="productprice" class="loginFormElement">Product Price</label>
+   <input class="form-control" id="productprice" type="email">
+ </div>
+   
+
+<div class="form-group">
+ 
+<label class="control-label">Product Image</label>
+ 
+<input class="filestyle" data-icon="false" type="file">
+ 
+</div>
+    
+    <div class="form-group">
+      <label class="loginformelement" for="productdescription">Product Description</label>
+  	  <input id="productdescription" class="form-control input-lg" placeholder="Large" type="text"><div class="container">
+      </div>
+ 
+    <button type="submit" id="loginSubmit" class="btn btn-success loginFormElement">Add Product</button>
+  
+    </div></form>
+    
+    </div>
+  
+  
+  
+
+  
+  
+  
+
+     
+        
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+ 
+>>>>>>> a55ca1ea3284fd74c9a72dba4e83008ec3856668
 
 </div>
 </body>
