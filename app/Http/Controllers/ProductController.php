@@ -40,8 +40,11 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+
+
         //
         $producto = new producto;
+        $producto->IdUsuario = $request->input('idUsuario');
         $producto->Producto = $request->input('Producto');
         $producto->Precio = $request->input('Precio');
         $producto->Descripcion = $request->input('Descripcion');
@@ -49,7 +52,20 @@ class ProductController extends Controller
         $producto->Puntuacion = 0;
         $producto->save();
 
-        return $producto;
+                 /*               $path = public_path().'/uploads/';
+            $files = $request->file('file');
+            foreach($files as $file){
+                $fileName = $file->getClientOriginalName();
+                $file->move($path, $fileName);
+            }
+
+*/
+
+
+
+        return $producto->id;
+
+
 
     }
 
@@ -98,21 +114,17 @@ class ProductController extends Controller
         //
     }
 
-    public function saveimage(Request $request){
-/*
-            $file = $request->file('file')->getClientOriginalName(); //Get Image Name
-
-            $fileName = $file;  //Concatenate both to get FileName (eg: file.jpg)
-
-            Storage::disk('public')->put($fileName, File::get($request->file('file')));*/
+    public function saveimage(Request $request)
+    {
 
 
-                        $path = public_path().'/uploads/';
-            $files = $request->file('file');
-            foreach($files as $file){
-                $fileName = $file->getClientOriginalName();
-                $file->move($path, $fileName);
-            }
+    /*    $multimedia = new multimedia;
+        $producto->idProducto = $request->input('idProducto');
+        $producto->URL = $request->input('URL');
+        $producto->Status = $request->input('Status');
+        $producto->save(); 
+*/ 
+
 
     }
 }

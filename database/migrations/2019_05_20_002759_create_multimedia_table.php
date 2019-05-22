@@ -17,6 +17,7 @@ class CreateMultimediaTable extends Migration
             $table->bigIncrements('id');
             $table->integer('idProducto');
             $table->string('URL',200);
+            $table->integer('Type');
             $table->integer('Status');
             $table->timestamps();
         });

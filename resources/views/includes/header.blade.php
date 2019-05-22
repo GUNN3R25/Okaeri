@@ -18,7 +18,6 @@
                 <li class="upper-links dropdown"><a class="links" href="">Inicio</a>
                     <ul class="dropdown-menu">
                         <li class="profile-li"><a class="profile-links" href="/register">Registrar</a></li>
-<<<<<<< HEAD
                         @if(auth()->guest())
                         <li class="profile-li"><a class="profile-links" href="/login">Login</a></li>
                         @endif
@@ -26,9 +25,6 @@
                         <li class="profile-li"><a class="profile-links" href="">Cerrar session de {{auth()->user()->name}}</a></li>
                         @endif
 
-=======
-                        <li class="profile-li"><a class="profile-links" href="/login">Login</a></li>
->>>>>>> a55ca1ea3284fd74c9a72dba4e83008ec3856668
                         <li class="profile-li"><a class="profile-links" href="/add">Agregar Producto</a></li>
                     </ul>
                 </li>
